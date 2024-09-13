@@ -1,17 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Dancing Script', cursive;
     box-sizing: border-box;
 }
+
 h1 {
-    color: white; 
-    margin-bottom: 30px; 
+    color: white;
+    margin-bottom: 30px;
     font-size: 40px;
     text-align: center;
     font-family: 'Roboto Mono', monospace;
 }
-.hero{
+
+.hero {
     width: 100%;
     height: 160vh;
     background-image: url(background.jpg);
@@ -20,21 +22,24 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; /* Added for vertical stacking of forms */
 }
-form{
-    width: 90%;
-    max-width:600px;
 
+form {
+    width: 90%;
+    max-width: 600px;
 }
-.input-group{
-    margin-bottom:30px;
-    position: relative;  
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
 }
+
 .form-group {
     display: flex;
     background: transparent;
-    margin-bottom:30px;
-    position: relative; 
+    margin-bottom: 30px;
+    position: relative;
     width: 102%;
 }
 
@@ -42,7 +47,7 @@ form{
     width: 20%;
     display: flex;
     align-items: center;
-    background-color:#D3D3D3;
+    background-color: #D3D3D3;
     text-align: left;
     padding-left: 10px;
 }
@@ -55,6 +60,7 @@ form{
     text-align: right;
     padding-right: 10px;
 }
+
 input[type="time"] {
     width: 100%;
     padding: 8px;
@@ -63,7 +69,8 @@ input[type="time"] {
     box-sizing: border-box;
     font-size: 15px;
 }
-input, textarea{
+
+input, textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
@@ -71,9 +78,9 @@ input, textarea{
     color: #fff;
     background: transparent;
     font-size: 15px;
-
 }
-label{
+
+label {
     height: 100%;
     position: absolute;
     left: 0;
@@ -83,7 +90,8 @@ label{
     cursor: text;
     transition: 0.2s;
 }
-button{
+
+button {
     padding: 10px 0;
     color: #fff;
     outline: none;
@@ -91,18 +99,25 @@ button{
     border: 1px solid #fff;
     width: 100%;
 }
+
 input:focus~label,
 input:valid~label,
 textarea:focus~label,
-textarea:valid~label{
+textarea:valid~label {
     top: -35px;
     font-size: 14px;
 }
-div1{
-    background-colour: #D3D3D3;
-    width:23.33%;
-    float:left;
+
+.hidden {
+    display: none;
 }
 
-
-
+/* Add specific styles for MFA form if needed */
+#mfaSection {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    text-align: center;
+}
